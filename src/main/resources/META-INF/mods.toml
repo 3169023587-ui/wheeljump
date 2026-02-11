@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="wheeljump"
+version="1.0.0"
+displayName="WheelJump"
+description='''
+Zero-latency wheel down = jump.
+Exactly like CS2.
+No config, no bloat.
+Forge 1.20.1 only.
+'''
