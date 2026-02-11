@@ -1,1 +1,12 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven {
+            name = 'Forge'
+            url = 'https://maven.minecraftforge.net/'
+        }
+    }
+}
+
 rootProject.name = 'wheeljump'
