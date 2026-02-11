@@ -1,18 +1,23 @@
 plugins {
     id 'java'
-    id 'net.minecraftforge.gradle' version '6.0.+'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
-minecraft {
-    mappings channel: 'official', version: '1.20.1'
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Forge'
+        url = 'https://maven.minecraftforge.net/'
+    }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+    // 只依赖 Forge，不依赖 Minecraft 映射环境
+    implementation 'net.minecraftforge:forge:1.20.1-47.3.0'
 }
 
 jar {
